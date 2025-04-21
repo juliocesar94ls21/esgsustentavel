@@ -419,6 +419,9 @@ button::-moz-focus-inner {
 .navs-mob ul li i{
 	color: #41c67e;
 }
+.content-cursos, .content-obra, .content-produto{
+	display: none;
+}
 @media only screen and (max-width: 767px){
 	.navbars{
 		display: none;

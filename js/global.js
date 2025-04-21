@@ -73,6 +73,44 @@ $(document).ready(function(){
 			$(this).html('<i class="fa-solid fa-bars"></i>');
 		}
 	});
+	
+	$(".navs ul li").eq(0).on("click", function(){
+		$(".page-active").hide()
+		$(".content-index").show().addClass("page-active");
+	});
+	$(".navs ul li").eq(1).on("click", function(){
+		$(".page-active").hide()
+		$(".content-cursos").show().addClass("page-active");
+	});
+	$(".navs ul li").eq(2).on("click", function(){
+		$(".page-active").hide()
+		$(".content-obra").show().addClass("page-active");
+	});
+	$(".btn-cf").on("click", function(){
+		$(".page-active").hide()
+		$(".content-obra").show().addClass("page-active");
+	});
+	$(".navs ul li").eq(3).on("click", function(){
+		$(".page-active").hide()
+		$(".content-produto").show().addClass("page-active");
+	});
+	$(".navs-mob ul li").eq(0).on("click", function(){
+		$(".page-active").hide()
+		$(".content-index").show().addClass("page-active");
+	});
+	$(".navs-mob ul li").eq(1).on("click", function(){
+		$(".page-active").hide()
+		$(".content-cursos").show().addClass("page-active");
+	});
+	$(".navs-mob ul li").eq(2).on("click", function(){
+		$(".page-active").hide()
+		$(".content-obra").show().addClass("page-active");
+	});
+	$(".navs-mob ul li").eq(3).on("click", function(){
+		$(".page-active").hide()
+		$(".content-produto").show().addClass("page-active");
+	});
+	
 	$(".submit-msg").on("click", function(){
 		$(this).val("...Aguarde");
 	});
