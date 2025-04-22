@@ -57,7 +57,7 @@ $(document).ready(function(){
 	});
 	
 	var $doc = $('html, body');
-	$('a').click(function() {
+	$('.tag-ancor').click(function() {
 		$doc.animate({
 			scrollTop: $( $.attr(this, 'href') ).offset().top
 		}, 500);
@@ -74,41 +74,28 @@ $(document).ready(function(){
 		}
 	});
 	
-	$(".navs ul li").eq(0).on("click", function(){
-		$(".page-active").hide()
-		$(".content-index").show().addClass("page-active");
-	});
-	$(".navs ul li").eq(1).on("click", function(){
-		$(".page-active").hide()
-		$(".content-cursos").show().addClass("page-active");
-	});
-	$(".navs ul li").eq(2).on("click", function(){
-		$(".page-active").hide()
-		$(".content-obra").show().addClass("page-active");
+	$(".navs ul li, .navs-mob ul li").on("click", function(){
+		itemIndex = $(this).index();
+		if(itemIndex == 0){
+			$(".page-active").hide().removeClass("page-active");
+			$(".content-index").show().addClass("page-active");
+		}
+		else if(itemIndex == 1){
+			$(".page-active").hide().removeClass("page-active");
+			$(".content-cursos").show().addClass("page-active");
+		}
+		else if(itemIndex == 2){
+			$(".page-active").hide().removeClass("page-active");
+			$(".content-obra").show().addClass("page-active");
+		}
+		else if(itemIndex == 3){
+			$(".page-active").hide().removeClass("page-active");
+			$(".content-produto").show().addClass("page-active");	
+		}
 	});
 	$(".btn-cf").on("click", function(){
-		$(".page-active").hide()
+		$(".page-active").hide().removeClass("page-active");
 		$(".content-obra").show().addClass("page-active");
-	});
-	$(".navs ul li").eq(3).on("click", function(){
-		$(".page-active").hide()
-		$(".content-produto").show().addClass("page-active");
-	});
-	$(".navs-mob ul li").eq(0).on("click", function(){
-		$(".page-active").hide()
-		$(".content-index").show().addClass("page-active");
-	});
-	$(".navs-mob ul li").eq(1).on("click", function(){
-		$(".page-active").hide()
-		$(".content-cursos").show().addClass("page-active");
-	});
-	$(".navs-mob ul li").eq(2).on("click", function(){
-		$(".page-active").hide()
-		$(".content-obra").show().addClass("page-active");
-	});
-	$(".navs-mob ul li").eq(3).on("click", function(){
-		$(".page-active").hide()
-		$(".content-produto").show().addClass("page-active");
 	});
 	
 	$(".submit-msg").on("click", function(){
