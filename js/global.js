@@ -73,6 +73,9 @@ $(document).ready(function(){
 			$(this).html('<i class="fa-solid fa-bars"></i>');
 		}
 	});
+	$(".navs-mob ul li").on("click", function(){
+		$(".navs-mob").hide();
+	});
 	
 	$(".navs ul li, .navs-mob ul li").on("click", function(){
 		itemIndex = $(this).index();

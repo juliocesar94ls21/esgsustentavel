@@ -393,7 +393,6 @@ button::-moz-focus-inner {
 }
 .content-product2{
 	margin-top: 5em;
-	margin-bottom: 15em;
 	position:relative;
 	z-index: 999999;
 }
@@ -421,6 +420,61 @@ button::-moz-focus-inner {
 }
 .content-cursos, .content-obra, .content-produto{
 	display: none;
+}
+#footer{
+	margin-top: 5em;
+}
+.m5em{
+	margin-top: 5em;
+}
+.m3em{
+	margin-top: 3em;
+}
+.tyo1{
+	padding: 0 15px;
+}
+.title-years-obra{
+	width: 100%;
+	border-bottom: 1px solid #d7d7d7;
+}
+.title-years-obra h1{
+	color: #41c67e;
+}
+.title-primary{
+	font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+}
+.row-tumbs{
+	margin-top: 3em;
+}
+.wrap-tumbs{
+	padding: 1.5em;
+	background-color: #e1ece3;
+}
+.desc-bread-obra{
+	color: #646464;
+	font-style: italic;
+    font-size: 13px;
+}
+.contente-img-obra{
+	height: 500px;
+	overflow: hidden;
+}
+.contente-img-obra img{
+	max-width: 100%;
+    position: relative;
+    z-index: -1;
+}
+.title-eg-obra{
+	font-size: 4em;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+.absolute-title-obra{
+	position: absolute;
+	width: 100%;
+	top: 275px;
 }
 @media only screen and (max-width: 767px){
 	.navbars{
@@ -466,6 +520,21 @@ button::-moz-focus-inner {
 	.row-input-nome{
 		margin-bottom: 2em;
 	}
+	.absolute-title-obra{
+		top: 100px;
+	}
+	.m5em{
+		margin-top: 1.5em;
+	}
+	.m3em{
+		margin-top: 1em;
+	}
+	.contente-img-obra{
+		height: 200px;
+	}
+	.col-tumb-ano{
+		margin-top: 1.5em;
+	}
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
 	.paragraf-txt{
@@ -476,6 +545,9 @@ button::-moz-focus-inner {
 	}
 	.title-icon-esg{
 		font-size: 3em;
+	}
+	.absolute-title-obra{
+		top: 120px;
 	}
 }
 @media only screen and (min-width: 993px) and (max-width: 1366px){
@@ -505,8 +577,6 @@ button::-moz-focus-inner {
 			add additional top padding (to move our content out of its way)
 			and a negative margin (to move everything up a bit).
 		*/
-
-		margin-top: -260px;
 		padding: calc(460px + 6em) 0 10em 0;
 		position: relative;
 		text-align: center;
