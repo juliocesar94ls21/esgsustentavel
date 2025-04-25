@@ -10,7 +10,10 @@ $(document).ready(function(){
 		elem6 = $(".content-aa"),
 		elem7 = $(".content-mc");
 		elem8 = $(".col-form-esg"),
-		classElem = $(".ccactive2");
+		classElem = $(".ccactive2"),
+		elem9 = $(".row-tumbs1");
+		elem10 = $(".row-tumbs2");
+		elem11 = $(".row-tumbs3");
 	
 	animateElem(elem1, elem1.children(".icon-text").eq(0), "animated fadeInLeftBig");
 	animateElem(elem1, elem1.children(".icon-text").eq(1), "animated fadeInUpBig");
@@ -32,6 +35,16 @@ $(document).ready(function(){
 	animateElem(elem7, elem7.find(".title-section-mc"), "animated fadeInLeftBig");
 	animateElem(elem7, elem7.find(".row-itens-ai"), "animated fadeInUpBig");
 	animateElem(elem8, elem8.find(".row"), "animated fadeInLeftBig");
+	animateElem(elem9, elem9.children(".col-tumb-ano").eq(0), "animated fadeInLeftBig");
+	animateElem(elem9, elem9.children(".col-tumb-ano").eq(1), "animated fadeInUpBig");
+	animateElem(elem9, elem9.children(".col-tumb-ano").eq(2), "animated fadeInRightBig");
+	animateElem(elem10, elem10.children(".col-tumb-ano").eq(0), "animated fadeInUpBig");
+	animateElem(elem10, elem10.children(".col-tumb-ano").eq(1), "animated fadeInLeftBig");
+	animateElem(elem10, elem10.children(".col-tumb-ano").eq(2), "animated fadeInUpBig");
+	animateElem(elem10, elem10.children(".col-tumb-ano").eq(3), "animated fadeInRightBig");
+	animateElem(elem11, elem11.children(".col-tumb-ano").eq(0), "animated fadeInLeftBig");
+	animateElem(elem11, elem11.children(".col-tumb-ano").eq(1), "animated fadeInUpBig");
+	animateElem(elem11, elem11.children(".col-tumb-ano").eq(2), "animated fadeInRightBig");
 	
 	function animateElem(elemAtachment, elemAnimate, animation){
 		$(window).on("scroll", function(){
