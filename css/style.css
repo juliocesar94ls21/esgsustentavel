@@ -565,7 +565,7 @@ button::-moz-focus-inner {
 }
 
 .content-walpaper{
-	background-image: url("../img/wpp-espigao_caioba.png");
+	background-image: url("../img/walppaper-fundo-edt2.png");
 	background-size: 100%;
 	padding-bottom: 6rem;
 }
@@ -737,4 +737,9 @@ button::-moz-focus-inner {
 }
 .pi{
 	margin-bottom: 0px;
+}
+.desc-title-esg-logo{
+	font-weight: 500;
+	color: #374836;
+	margin-left: 10px;
 }
