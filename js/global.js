@@ -39,26 +39,6 @@ $(document).ready(function(){
 	$(".navs-mob ul li").on("click", function(){
 		$(".navs-mob").hide();
 	});
-	
-	$(".navs ul li, .navs-mob ul li").on("click", function(){
-		itemIndex = $(this).index();
-		if(itemIndex == 0){
-			$(".page-active").hide().removeClass("page-active");
-			$(".content-index").show().addClass("page-active");
-		}
-		else if(itemIndex == 1){
-			$(".page-active").hide().removeClass("page-active");
-			$(".content-cursos").show().addClass("page-active");
-		}
-		else if(itemIndex == 2){
-			$(".page-active").hide().removeClass("page-active");
-			$(".content-obra").show().addClass("page-active");
-		}
-		else if(itemIndex == 3){
-			$(".page-active").hide().removeClass("page-active");
-			$(".content-produto").show().addClass("page-active");	
-		}
-	});
 
 	$(".btn-praia-leste").on("click", function(){
 		$(".page-active").hide().removeClass("page-active");

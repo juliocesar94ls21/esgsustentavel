@@ -419,9 +419,6 @@ button::-moz-focus-inner {
 .navs-mob ul li i{
 	color: #41c67e;
 }
-.content-cursos, .content-obra, .content-produto, .obra-praia{
-	display: none;
-}
 #footer{
 	margin-top: 5em;
 }
@@ -742,4 +739,15 @@ button::-moz-focus-inner {
 	font-weight: 500;
 	color: #374836;
 	margin-left: 10px;
+}
+.img-content{
+	width: 100%;
+	height: auto;
+}
+.content-terms{
+	font-family: "Roboto", sans-serif !important;
+	color: #000;
+}
+.content-terms h2{
+	font-family: "Roboto", sans-serif !important;
 }
